@@ -1,0 +1,79 @@
+:root {
+  --bg: #07070D;
+  --bg2: #0D0D18;
+  --bg3: #12121F;
+  --card: #0F0F1A;
+  --border: rgba(245, 166, 35, 0.18);
+  --border2: rgba(245, 166, 35, 0.35);
+  --amber: #F5A623;
+  --amber2: #FFB938;
+  --amber-dim: rgba(245, 166, 35, 0.12);
+  --cyan: #00D4FF;
+  --red: #FF4560;
+  --green: #00E396;
+  --text: #E8E8F2;
+  --text2: #9090A8;
+  --text3: #5A5A72;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Syne', sans-serif;
+  overflow: hidden;
+}
+
+.num {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.amber-dim {
+  background-color: var(--amber-dim);
+}
+
+input[type=range] {
+  accent-color: var(--amber);
+}
+
+.content-area::-webkit-scrollbar {
+  width: 6px;
+}
+
+.content-area::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.content-area::-webkit-scrollbar-thumb {
+  background-color: rgba(245, 166, 35, 0.3);
+  border-radius: 10px;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+canvas {
+  border-radius: 8px;
+}
